@@ -6,7 +6,7 @@ print("course[0:3]: " + course[0:3])
 print("course[1:]: " + course[1:])
 print("course[:5]: " + course[:5])
 print("course[:]: " + course[:])
-print("-" * 10)
+print("-" * 10, ,"-" * 10)
 
 course2 = """\
 Hi John,

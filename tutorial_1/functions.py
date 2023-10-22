@@ -7,9 +7,7 @@ print("Start")
 greet_user()
 print("Finish")
 
-print("-" * 10)
-print("parameters")
-print("-" * 10)
+print("-" * 10, "parameters", "-" * 10)
 
 
 def great_user_2(first_name, last_name):
@@ -20,9 +18,7 @@ great_user_2("John", "Doe")
 great_user_2("John", last_name="Smith")
 
 
-print("-" * 10)
-print("return statement")
-print("-" * 10)
+print("-" * 10, "return statement", "-" * 10)
 
 
 def square(number):

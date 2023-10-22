@@ -7,17 +7,13 @@ customer = {
 
 print(customer["age"])
 
-print("-" * 10)
-print("get not existed key")
-print("-" * 10)
+print("-" * 10, "get not existed key", "-" * 10)
 
 # print(customer["test"]) # will throw error since "test" not exist
 print(customer.get("test"))
 print(customer.get("test", "hello"))
 
-print("-" * 10)
-print("update value")
-print("-" * 10)
+print("-" * 10, "update value", "-" * 10)
 
 customer["age"] = 50
 customer["male"] = True

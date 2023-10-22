@@ -1,6 +1,4 @@
-print("-" * 10)
-print("while loop")
-print("-" * 10)
+print("-" * 10, "while loop", "-" * 10)
 
 index = 1
 while index <= 5:
@@ -12,9 +10,7 @@ else:  # else on while loop run when loop finished without break
     print("loop finished without break")
 print("Done")
 
-print("-" * 10)
-print("for loop")
-print("-" * 10)
+print("-" * 10, "for loop", "-" * 10)
 
 for item in "Python":
     print(item, end=" ")
