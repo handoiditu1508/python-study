@@ -9,5 +9,6 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "isort.args":["--profile", "black"],
 }
