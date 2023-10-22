@@ -1,0 +1,10 @@
+- Create virtual environment
+  + Ctrl + Shift + P
+  + Python: Create Environment...
+  + venv
+- Allow terminal to run shell script to activate virtual environment
+  + Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+- Create requirements.txt
+  + pip freeze > requirements.txt
+- Install packages from requirements.txt
+  + pip install -r requirements.txt
