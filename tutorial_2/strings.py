@@ -65,3 +65,6 @@ print(word[:2] + "py")  # Pypy
 
 # length
 print(len("supercalifragilisticexpialidocious"))  # 34
+
+# check string contains substring
+print("Py" in word)  # True

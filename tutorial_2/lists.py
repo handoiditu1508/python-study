@@ -37,6 +37,10 @@ print(letters)  # []
 letters = ["a", "b", "c", "d"]
 print(len(letters))  # 4
 
+# spread operator like javascript
+[a, b, *rest] = letters
+print(rest)  # ['c', 'd']
+
 # lists containing other lists
 a = ["a", "b", "c"]
 n = [1, 2, 3]
@@ -44,3 +48,6 @@ x = [a, n]
 print(x)  # [['a', 'b', 'c'], [1, 2, 3]]
 print(x[0])  # ['a', 'b', 'c']
 print(x[0][1])  # b
+
+# check list contains value
+print("a" in letters)  # True
