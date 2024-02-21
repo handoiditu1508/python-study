@@ -39,7 +39,7 @@ match point:
 
 # class
 class Point:
-    def __init__(self, x, y) -> None:
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
