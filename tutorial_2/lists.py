@@ -101,3 +101,35 @@ for x in [1, 2, 3]:
         if x != y:
             combs.append((x, y))
 print(combs)  # [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+# nested list comprehensions
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+print(
+    [[row[i] for row in matrix] for i in range(4)]
+)  # [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+# equivalent to
+transposed = []
+for i in range(4):
+    transposed.append([row[i] for row in matrix])
+print(transposed)  # [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+# equivalent to
+transposed = []
+for i in range(4):
+    transposed_row = []
+    for row in matrix:
+        transposed_row.append(row[i])
+    transposed.append(transposed_row)
+print(transposed)  # [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+# equivalent to this built-in function
+print(list(zip(*matrix)))  # [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+
+# looping with index value
+for i, v in enumerate(["tic", "tac", "toe"]):
+    print(i, v)
+# 0 tic
+# 1 tac
+# 2 toe
