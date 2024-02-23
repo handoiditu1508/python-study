@@ -133,3 +133,41 @@ for i, v in enumerate(["tic", "tac", "toe"]):
 # 0 tic
 # 1 tac
 # 2 toe
+
+# loop over two or more sequences at the same time
+questions = ["name", "quest", "favorite color"]
+answers = ["lancelot", "the holy grail", "blue"]
+for q, a in zip(questions, answers):
+    print("What is your {0}?  It is {1}.".format(q, a))
+# What is your name?  It is lancelot.
+# What is your quest?  It is the holy grail.
+# What is your favorite color?  It is blue.
+
+# loop over a sequence in reverse
+for i in reversed(range(1, 10, 2)):
+    print(i)
+# 9
+# 7
+# 5
+# 3
+# 1
+
+# loop over a sequence in sorted order
+basket = ["apple", "orange", "apple", "pear", "orange", "banana"]
+for i in sorted(basket):
+    print(i)
+# apple
+# apple
+# banana
+# orange
+# orange
+# pear
+
+# comparing sequences and other types
+print((1, 2, 3) < (1, 2, 4))  # True
+print([1, 2, 3] < [1, 2, 4])  # True
+print("ABC" < "C" < "Pascal" < "Python")  # True
+print((1, 2, 3, 4) < (1, 2, 4))  # True
+print((1, 2) < (1, 2, -1))  # True
+print((1, 2, 3) == (1.0, 2.0, 3.0))  # True
+print((1, 2, ("aa", "ab")) < (1, 2, ("abc", "a"), 4))  # True
