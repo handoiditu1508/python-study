@@ -68,3 +68,6 @@ print(len("supercalifragilisticexpialidocious"))  # 34
 
 # check string contains substring
 print("Py" in word)  # True
+
+# reverse
+print("hello"[::-1])  # olleh

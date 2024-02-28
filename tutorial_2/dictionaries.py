@@ -2,6 +2,7 @@ tel = {"jack": 4098, "sape": 4139}
 tel["guido"] = 4127
 print(tel)  # {'jack': 4098, 'sape': 4139, 'guido': 4127}
 print(tel["jack"])  # 4098
+print(tel.get("jone", "not found"))  # not found
 
 # delete
 del tel["sape"]

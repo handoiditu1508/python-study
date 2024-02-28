@@ -156,6 +156,10 @@ print(list(range(3, 6)))  # [3, 4, 5]
 args = [3, 6]
 print(list(range(*args)))  # [3, 4, 5]
 
+# unpacking argument tuple
+args = (3, 6)
+print(list(range(*args)))  # [3, 4, 5]
+
 
 # unpacking argument dictionary
 def parrot(voltage, state="a stiff", action="voom"):
