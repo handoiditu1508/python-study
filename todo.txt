@@ -11,8 +11,10 @@
   + Pandas
   + MatPlotLib
   + sklearn (scikit-learn)
+  + SciPy
 - Jupyter
 - Anaconda
+- Google Colab
 - references
   + https://www.reddit.com/r/learnmachinelearning/comments/qlpcl8/a_clear_roadmap_to_complete_learning_aiml_by_the/
   + https://www.reddit.com/r/learnmachinelearning/comments/cxrpjz/a_clear_roadmap_for_mldl/eyn8cna/?context=3
